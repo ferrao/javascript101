@@ -1,408 +1,495 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+    <meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+    <title>reveal.js - The HTML Presentation Framework</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+    </script>
 
-		<!--[if lt IE 9]>
+    <!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
-	</head>
+</head>
 
-	<body>
+<body>
 
-		<div class="reveal">
+    <div class="reveal">
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> / <a href="http://twitter.com/hakimel">@hakimel</a></small>
-					</p>
-				</section>
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Academia de Código</h1>
+                <h3>Introducing Object Oriented Programming in JavaScript</h3>
+                <p>
+                    <small>Created by <a>Rui Ferrão</a></small>
+                </p>
+                <aside class="notes">
+                    <ol>
+                        <li>Basic overview of JavaScript</li>
+                        <li>I will have to simplify many things</li>
+                    </ol>
+                </aside>
+            </section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+            <section>
+                <h2>What is Object Oriented Programming?</h2>
+                <blockquote class="fragment">
+                    <em>Object-oriented Programming</em> is a model for writing computer programs.
+                    <br>
+                </blockquote>
+                <blockquote class="fragment">
+                    Before OOP, most programs were written in a
+                    <em>Procedural Programming</em> model and consisted on a list or set of instructions telling a computer what to do step by step
+                </blockquote>
+                <blockquote class="fragment">
+                    <strong>OOP is modeled around objects that interact with each other.</strong>
+                </blockquote>
+            </section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="-webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+            <section>
+                <h2>And what is a Software Object?</h2>
+                <img id="object" src="object.png">
+				<p class="fragment">Classical OOP</p>
+				<aside class="notes">
+						Discuss class based OOP (need to create class then instance)<br>
+						vs JavaScript (Immediately create instance which can be used as a Prototype)
+				</aside>
+            </section>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
-					</p>
-				</section>
+            <section>
+                <h2>I was asked to make this fun...</h2>
+                <h3 class="fragment">So let's grab a computer and create some Objects!</h3>
+                <p class="fragment">... not so fast, we need to understand some basic things first...</p>
+            </section>
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+            <section>
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+                <section>
+                    <h2>Some JavaScript code...</h2>
+                    <pre><code data-trim contenteditable>
+/**
+ * Flatten an array of arrays
+ *
+ * @param {Array a An array of arrays
+ * @return {Array} A flattened array
+*/
+function flattenArray(a) {
+	return a.reduce(function(acc, value) {
+		return acc.concat(value);
+	});
+}}
+                        </code></pre>
+                    <h3 class="fragment">... but how do i run it???</h3>
+                    <aside class="notes">
+                        <ol>
+                            <li>JavaScript is an Interpreted language.</li>
+                            <li>What is the obvious choice?</li>
+                        </ol>
+                    </aside>
+                </section>
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+                <section>
+                    <h2>Browser is the most obvious choice</h2>
+                    <p class="fragment">and the <a href="scratchpad.html">console</a> makes for a great scratch pad!</p>
+                    <aside class="notes">
+                        <ol>
+                            <li>Open new tab</li>
+                            <li>Open Chrome Dev tools</li>
+                            <li>Execute simple math on the console</li>
+                            <li>(100 + 4) * 11</li>
+                            <li>"Academia" + "de" + "Codigo"</li>
+                        </ol>
+                    </aside>
+                </section>
+            </section>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+            <section>
+                <h2>Variables</h2>
+                <p>
+                    We need a place to store results....
+                </p>
+            </section>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+            <section>
+                <section>
+                    <h2>Data Types</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Type</th>
+                                <th>Example</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Number</td>
+                                <td>3.141592653589793</td>
+                            </tr>
+                            <tr>
+                                <td>String</td>
+                                <td>'Academia de Código'</td>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td>true</td>
+                            </tr>
+                            <tr>
+                                <td>Array</td>
+                                <td>[1, 'Apple', 2 , 'Oranges', false]</td>
+                            </tr>
+                            <tr>
+                                <td>Object</td>
+                                <td>???</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section>
+                    <h3>check them with a special unary operator</h3>
+                    <pre><code data-trim contenteditable>
+typeof true
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+typeof 11.2
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
-
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment roll-in">roll-in</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p class="fragment current-visible">current-visible</p>
-						<p class="fragment highlight-red">highlight-red</p>
-						<p class="fragment highlight-blue">highlight-blue</p>
-					</section>
-				</section>
-
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
-
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
-
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code>&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-				</section>
-
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code>Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
-
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
-
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
-
-    var nodes = document.querySelectorAll( selector );
-
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
-
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
+typeof 'Academia'
 					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+                </section>
+                <section>
+                    <h3>compare values with binary operators</h3>
+                    <pre><code data-trim contenteditable>
+
+2 &gt; 100
+
+'Academia' &gt; 'Codigo'
+
+true &amp;&amp; false
+
+true || false
+
+5 &lt;= 5
+
+3 === 5
+
+3 === (5-2)
+
+
+                    </code></pre>
+                </section>
 
 				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+                    <h3>and put it all together</h3>
+                    <pre><code data-trim contenteditable>
 
+var year = 2015;
+
+var leap = 100;
+
+var future = year + leap;
+
+                    </code></pre>
+                </section>
+
+            </section>
+
+            <section>
+                <h2>Functions are the main building blocks of our JavaScript code</h2>
+                <p>
+                    The allow us to declare new vocabulary by warpping a piece of code in a value
+                </p>
+				<aside class="notes">
+						var a = 2;<br>
+						var b = 3;<br>
+						var squareOfA = a * a;<br>
+						var squareOfB = b * b;<br>
+						function square(value) { return value * value; };
+						var square = function(value) { return value * value; };
+                </aside>
+            </section>
+
+			<section>
+				<h2>JavaScript comes with lots of built-in functions</h2>
+				<p>Mozilla Developers Network is a great resource for JavaScript documentation</p>
+				<aside class="notes">
+						String.length<br>
+						String.toUpperCase<br>
+						Array.length<br>
+						Math.PI<br>
+                </aside>
+			</section>
+
+			<section>
 				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+					<h2>Object Literal Notation</h2>
+					<p>What does it mean??</p>
+					<p>It means that we can easily define objects on the fly!!!</p>
+					<pre class="fragment"><code data-trim contenteditable>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							<tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							<tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							<tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;The nice thing about standards is that there are so many to choose from&rdquo;</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
-
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
-
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
-
+var pixel = {
+	x: 1,
+	y: 2,
+	color: 'red'
+};
+					</code></pre>
+					<p class="fragment">Objects are simple collections of key-value pairs</p>
+					<p class="fragment">Objects values can contain other objects</p>
+					<pre class="fragment"><code data-trim contenteditable>
+var circle = {
+	center: pixel,
+	radius: 10
+};
+					</code></pre>
 					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+						No need for creating a class<br>
+						Just write the object on the fly<br>
+						Objects can have other objects - composition<br>
 					</aside>
 				</section>
 
 				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe src="//www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
-
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
-
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
+					<h2>Functions add behaviour to objects</h2>
+					<p>Circle object has no behaviour...</p>
+					<pre><code data-trim contenteditable>
+var circle = {
+	center: pixel,
+	radius: 10
+};
 					</code></pre>
+					<p class="fragment">Let's make our circle shrink by arbitrary number of pixels...</p>
+					<pre class="fragment"><code data-trim contenteditable>
+
+circle.shrink = function(value) {
+	radius = radius - value &gt; 0 ? radius - value : 0;
+}
+					</code></pre>
+					<p class="fragment">...and introduce the <em>ternary</em> operator!</p>
+					<aside class="notes">
+						The console object<br>
+						The log method<br>
+					</aside>
 				</section>
 
 				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
+					<h2>JavaScript Object Notation</h2>
+					<h3 class="fragment">Subset of Object Literal Notation</h3>
+					<h3 class="fragment">Does not support functions as values</h3>
+					<p class="fragment">Used to serialize and desirialize objects. Very convenient way to transfer objects across network without requiring complex encoding/decoding</p>
+					<aside class="notes">
+						Inner objects are JSON encoded as well<br>
+						Show apple RSS feed<br>
+					</aside>
+				</section>
+
+			</section>
+
+			<section>
+
+				<section>
+					<h2>Object Creation in JavaScript</h2>
+					<p class="fragment">how to create confusion in the mind of a software developer</p>
 				</section>
 
 				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
+					<h2>The factory creation pattern</h2>
+					<p>Or how to abstract the creation of complex objects...</p>
+					<pre class="fragment"><code data-trim contenteditable>
+function pixelFactory(x, y, color) {
+  return {
+    x: x,
+    y: y,
+    color: color
+  };
+}
+
+function circleFactory(point, radius) {
+  return {
+    point: point,
+    radius: radius,
+    shrink = function(value) {
+      radius = radius - value &gt; 0 ? radius - value : 0;
+    }
+  };
+}
+
+var p1 = pixelFactory(2,3,'red');
+var p2 = pixelFactory(6,2,'green');
+var c1 = circleFactory(p1, 10);
+var c2 = circleFactory(p2, 10);
+c1.shrink(2);
+c2.shrink(1);
+					</code></pre>
+					<aside class="notes">
+						One major drawback... memory usage is very inneficient<br>
+						Compare to classical OOP<br>
+					</aside>
 				</section>
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="http://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
+				<section>
+					<h2>The constructor pattern</h2>
+					<p>Or how to emulate classical inheritance in javascript</p>
+					<pre class="fragment"><code data-trim contenteditable>
+
+function Pixel(x, y, color) {
+  this.x = x;
+  this.y = y;
+  this.color = color;
+}
+
+function Circle(pixel, radius) {
+  this.pixel = pixel;
+  this.radius = radius;
+  this.shrink = function(value) {
+    this.radius = this.radius - value &gt; 0 ? this.radius - value : 0;
+  };
+}
+
+var p1 = new Pixel(1,2,'red');
+var p2 = new Pixel(6,2,'green');
+var c1 = new Circle(p1,10);
+var c2 = new Circle(p2,10);
+c1.shrink(2);
+c2.shrink(1);
+				</code></pre>
+				<p class="fragment">DO NOT FORGET THE NEW OPERATOR!!!!</p>
+				</section>
+				<aside class="notes">
+					by convention, constructor functions are capitalized<br>
+					new creates a new object using the provided constructor function<br>
+					new object is accessible to the constructor function with this<br>
+					Did we solved the previous issue of memory inneficiency?
+				</aside>
+
+				<section>
+					<h2>Prototypal Inheritance in JavaScript</h2>
+					<p>Prototype-based programming is an OOP model that doesn't use classes, but rather accomplishes behavior reuse by expanding upon existing prototype objects.</p>
+					<pre><code data-trim contenteditable>
+var sleeper = {
+  sleep: function() {
+    console.log('Sleeping...');
+  }
+};
+
+function Programmer(type) {
+  this.type = type;
+  this.speak = function(line) {
+    console.log('The ' + this.type + ' programmer says ' + line);
+  };
+}
+
+var javaScriptProgrammer = new Programmer('JavaScript');
+javaScriptProgrammer.speak('I know prototypes!');
+javaScriptProgrammer.sleep();
+
+Programmer.prototype = sleeper;
+
+var javaProgrammer = new Programmer('Java');
+javaProgrammer.speak('I know reflection!');
+javaProgrammer.sleep();
+
+				</code></pre>
 				</section>
 
-			</div>
+				<section>
+					<h2>Constructor/Prototype Pattern</h2>
+					<p>Effecient memory usage due to one time creation of shrink function in Circle prototype</p>
+					<pre><code data-trim contenteditable>
+function Circle(pixel, radius) {
+  this.pixel = pixel;
+  this.radius = radius;
+}
 
-		</div>
+Circle.prototype.shrink = function(value) {
+  this.radius = this.radius - value &gt; 0 ? this.radius - value : 0;
+};
+				</code></pre>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+				</section>
 
-		<script>
+			</section>
 
-			// Full list of configuration options available at:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+            <section style="text-align: left;">
+                <h1>THE END</h1>
+                <h2>But so much more to learn... </h2>
+				<p>We just barely scratched the surface of JavaScript!</p>
+            </section>
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+        </div>
 
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+    </div>
 
-		</script>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
 
-	</body>
+    <script>
+        // Full list of configuration options available at:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+        	controls: true,
+        	progress: true,
+        	history: true,
+        	center: true,
+        	keyboard: true,
+
+        	transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        	// Optional reveal.js plugins
+        	dependencies: [{
+        		src: 'lib/js/classList.js',
+        		condition: function() {
+        			return !document.body.classList;
+        		}
+        	}, {
+        		src: 'plugin/markdown/marked.js',
+        		condition: function() {
+        			return !!document.querySelector('[data-markdown]');
+        		}
+        	}, {
+        		src: 'plugin/markdown/markdown.js',
+        		condition: function() {
+        			return !!document.querySelector('[data-markdown]');
+        		}
+        	}, {
+        		src: 'plugin/highlight/highlight.js',
+        		async: true,
+        		condition: function() {
+        			return !!document.querySelector('pre code');
+        		},
+        		callback: function() {
+        			hljs.initHighlightingOnLoad();
+        		}
+        	}, {
+        		src: 'plugin/zoom-js/zoom.js',
+        		async: true
+        	}, {
+        		src: 'plugin/notes/notes.js',
+        		async: true
+        	}]
+        });
+    </script>
+
+</body>
+
 </html>
