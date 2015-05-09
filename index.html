@@ -293,7 +293,7 @@ circle.shrink = function(value) {
 				</section>
 
 				<section>
-					<h2>JavaScript Object Notation</h2>
+					<h2>JavaScript Object Notation (JSON)</h2>
 					<h3 class="fragment">Subset of Object Literal Notation</h3>
 					<h3 class="fragment">Does not support functions as values</h3>
 					<p class="fragment">Used to serialize and desirialize objects. Very convenient way to transfer objects across network without requiring complex encoding/decoding</p>
@@ -308,7 +308,7 @@ circle.shrink = function(value) {
 			<section>
 
 				<section>
-					<h2>Object Creation in JavaScript</h2>
+					<h2>Object Creation Patterns in JavaScript</h2>
 					<p class="fragment">how to create confusion in the mind of a software developer</p>
 				</section>
 
@@ -328,8 +328,8 @@ function circleFactory(point, radius) {
   return {
     point: point,
     radius: radius,
-    shrink = function(value) {
-      radius = radius - value &gt; 0 ? radius - value : 0;
+    shrink : function(value) {
+      this.radius = this.radius - value &gt; 0 ? this.radius - value : 0;
     }
   };
 }
